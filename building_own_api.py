@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 
 # GETTING INFORMATION
+# GET is used to request data from a specified resource.
+# It is the default HTTP method so we don't specify it in these methods
 
 @app.route('/')
 def hello():
@@ -68,11 +70,6 @@ def delete_flight(id):
     #return jsonify(deleted_flight)
     # OR
     return jsonify(flights)
-
-
-
-
-
 
 if __name__ == '__main__':
     # what do I want to happen when this file runs?
